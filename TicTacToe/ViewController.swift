@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func onButtonPressed(sender: AnyObject) {
+        sender.setImage(UIImage(named: "cross.png"), forState: .Normal)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
