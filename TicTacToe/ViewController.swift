@@ -29,8 +29,8 @@ class ViewController: UIViewController {
         gameoverlabel.center = CGPointMake(gameoverlabel.center.x-400, gameoverlabel.center.y)
         playAgainButton.alpha = 0
         
-        for var i=1; i<10; i++ {
-            var button = tictacview.viewWithTag(i) as UIButton
+        for i in 1 ..< 10 {
+            let button = tictacview.viewWithTag(i) as! UIButton
             button.setImage(UIImage(), forState:.Normal)
         }
         
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
                     })
                 }
             }
-            count++
+            count += 1
         }
     }
     
